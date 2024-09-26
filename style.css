@@ -1,0 +1,253 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://manybackgrounds.com/images/featured/pokeball-mcs4xg2ash4hj4e9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(255, 240, 240);
+    text-shadow: 1px 5px 10px black;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.header h1 {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.pokemon-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px ;
+    justify-content: space-evenly;
+    align-content: stretch;
+    margin-top: 120px;
+    padding-left: 50px;
+}
+
+.card {
+    border:1px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgb(66, 61, 62);
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    transition: 2s;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, transparent 70%, #ffffff 70%);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    transition: 0.5s;
+    box-shadow: 0 5px 50px #faf9f6;
+    border: 1px solid black;
+}
+
+.card:hover img{
+    transform: scale(1.05,1);
+    transform: translateY(-5px) scale(1.05); 
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    scale: 0.7;
+    padding: 5px;
+    transition: all 0.3s ease;  
+    object-fit: cover;
+}
+
+.pokemon-id {
+    font-weight: 500;
+    margin-bottom: -5px;
+    margin-top: 10px;
+}
+
+.pokemon-name {
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.pokemon-type {
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+ul {
+    line-height: 1.7;
+    padding: 0;
+}
+span{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .7);
+    background: #dbdbdb;
+}
+/* Pokemon types & Hover*/
+.Normal {
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #727272;
+}
+
+.Fire {
+    background-color: #f42;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Water {
+    background-color: #0080ff;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Electric {
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fc3;
+}
+
+.Grass {
+    background-color: #5cb737;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ice {
+    background-color: #6cf;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Fighting {
+    background-color: #b54;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Poison {
+    background-color: #a59;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ground {
+    background-color: #db5;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Flying {
+    background-color: #89f;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Psychic {
+    background-color: #f59;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Bug {
+    background-color: #83901a;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Rock {
+    background-color: #ba6;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ghost {
+    background-color: #66b;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Dragon {
+    background-color: #76e;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;  
+}
+
+.Dark {
+    background-color: #754;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Steel {
+    background-color: #aab;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Fairy {
+    background-color: #e9e;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
