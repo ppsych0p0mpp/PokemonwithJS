@@ -70,27 +70,27 @@ function fetchPokemonData() {
             <table>
                 <tbody>
                     <tr>
-                        <td>National No:</td>
+                        <td><b>National No:</b></td>
                         <td>${id}</td>
                     </tr>
                     <tr>
-                        <td>Type:</td>
+                        <td><b>Type:</b></td>
                         <td>${typeHTML}</td>
                     </tr>
                     <tr>
-                        <td>Species:</td>
+                        <td><b>Species:</b></td>
                         <td>${species}</td>
                     </tr>
                     <tr>
-                        <td>Height:</td>
+                        <td><b>Height:</b></td>
                         <td>${height}</td>
                     </tr>
                     <tr>
-                        <td>Weight:</td>
+                        <td><b>Weight:</b></td>
                         <td>${weight}</td>
                     </tr>
                     <tr>
-                        <td>Abilities:</td>
+                        <td><b>Abilities:</b></td>
                         <td>${abilitiesHTML}</td>
                     </tr>
                 </tbody>
