@@ -42,5 +42,5 @@ $(document).ready(function() {
 })
 
 function SetID(id){
-    window.location.href="pokemon.html?"+"id="+--id;
+    window.location.href="details.html?"+"id="+--id;
 };

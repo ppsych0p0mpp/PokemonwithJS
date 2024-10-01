@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: colorChange 20s infinite;
+}
+
+@keyframes colorChange {
+    0% { background-color: #ffcccb; }
+    25% { background-color: #ccffcc; }
+    50% { background-color: #cce6ff; }
+    75% { background-color: #ffffcc; }
+    100% { background-color: #ffcccb; }
+}
+
+.pokemon-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    box-shadow: 0px 5px 10px rgb(66, 61, 62);
+    max-width: 800px;
+    width: 100%;
+    
+}
+.pokemon-sprite{
+    filter: drop-shadow(10px 2px 20px rgba(0, 0, 0, 0.5));
+}
+.pokemon-sprite p{ 
+    font-size: large;
+}
+
+.pokemon-details {
+    text-align: center;
+}
+
+.stat-bar {
+    background-color: #f0f0f0;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stat-fill {
+    height: 100%;
+    background-color: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 5px;
+    text-align: left;
+}
+
+.return {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+}
+/* Abilities */
+td span {
+    margin-right: 5px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    border: 1px solid gray;
+    background-color: darkgoldenrod;
+    text-transform: uppercase;
+}
+
+td div {
+    background-color: lightgreen;
+    height: 15px;
+    width: 100%;
+    border: 1.5px solid green;
+}
+/* pokemon types */
+.Normal {
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #727272;
+}
+
+.Fire {
+    background-color: #f42;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Water {
+    background-color: #0080ff;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Electric {
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fc3;
+}
+
+.Grass {
+    background-color: #5cb737;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ice {
+    background-color: #6cf;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Fighting {
+    background-color: #b54;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Poison {
+    background-color: #a59;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ground {
+    background-color: #db5;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Flying {
+    background-color: #89f;
+    box-shadow: 0px 3px 5px  rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Psychic {
+    background-color: #f59;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Bug {
+    background-color: #83901a;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Rock {
+    background-color: #ba6;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Ghost {
+    background-color: #66b;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Dragon {
+    background-color: #76e;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;  
+}
+
+.Dark {
+    background-color: #754;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.Steel {
+    background-color: #aab;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+.Fairy {
+    background-color: #e9e;
+    box-shadow: 0px 3px 5px rgb(26, 23, 24);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
